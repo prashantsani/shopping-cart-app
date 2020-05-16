@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import Store from './Store';
-import Cart from './Cart';
-import NotFound from './NotFound';
+import Store from './pages/store/Store';
+import Cart from './pages/cart/Cart';
+import NotFound from './pages/404/NotFound';
 
 const Router = () => (
   <BrowserRouter>

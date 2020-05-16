@@ -1,0 +1,29 @@
+/* Resets and utility classes */
+*{
+	margin: 0;
+	padding: 0;
+}
+* svg{
+	background: none;
+	outline: none;
+}
+:root{
+	--header-footer-bg: rgba(50, 83, 232);
+	--header-height: 65px;
+}
+.react-icons {
+	vertical-align: middle;
+	display: inline-block;
+}
+.wrap{
+	width: 80%;
+	max-width: 1140px;
+	margin: 0 auto;
+	position: relative;
+	height: 100%;
+}
+/* Main */
+main{
+	margin-top: 100px;
+	min-height: calc(100vh - (var(--header-height) + 74px) );
+}

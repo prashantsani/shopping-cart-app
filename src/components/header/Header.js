@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { AiFillStar } from 'react-icons/ai';
 import { FaSearch } from 'react-icons/fa';
 import { FaShoppingCart } from 'react-icons/fa';
+import './style.scss';
 
 
 export class Header extends Component {
