@@ -13,12 +13,12 @@ export class Header extends Component {
           <Link to='/' className='inline-block'><AiFillStar color='rgb(243,195,0)' size='44' /></Link>
           
           <button className='inline-block ml-auto'> 
-            <FaSearch color="rgb(255,255,255)" size="28" className='inline-block'/>
+            <FaSearch color='rgb(255,255,255)' size='28' className='inline-block'/>
           </button>
 
           <Link to='/cart' className='inline-block cart-link ml-4'>
             <sup className='inline-block count'>2</sup>
-            <FaShoppingCart color='rgb(0,0,0)' size='32' className='inline-block'/>
+            <FaShoppingCart color='rgb(255,255,255)' size='32' className='inline-block'/>
           </Link>
         </div>
       </header>

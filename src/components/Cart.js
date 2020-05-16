@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 
 class Cart extends React.Component {
     render() {
@@ -11,6 +12,7 @@ class Cart extends React.Component {
                     This is Cart Page
                 </div>
             </main>
+            <Footer />
             </>
         )
     }

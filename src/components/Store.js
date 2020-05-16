@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './Header';
+import Footer from './Footer';
 import { TiArrowUnsorted } from 'react-icons/ti';
 
 
@@ -13,6 +14,7 @@ class Store extends React.Component {
                     This is Store Page <TiArrowUnsorted />
                 </div>
             </main>
+            <Footer />
             </>
         )
     }
