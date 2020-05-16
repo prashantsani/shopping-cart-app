@@ -10,7 +10,7 @@ export class Header extends Component {
     return (
       <header>
         <div className='wrap flex flex-row flex-no-wrap items-center'>
-          <Link to='/' className='inline-block'><AiFillStar color='rgb(243,195,0)' size='44' /></Link>
+          <Link to='/shopping-cart-app/' className='inline-block'><AiFillStar color='rgb(243,195,0)' size='44' /></Link>
           
           <button className='inline-block ml-auto bg-transparent'> 
             <FaSearch color='rgb(255,255,255)' size='28' className='inline-block'/>

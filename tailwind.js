@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './public/*.html',
+    './src/**/*.js',
+  ],
   target: 'relaxed',
   prefix: '',
   important: false,
@@ -279,6 +282,7 @@ module.exports = {
       '7': '7',
     }
   },
+  transition: 'none',
   variants: {
     accessibility: ['responsive', 'focus'],
     alignContent: ['responsive'],
