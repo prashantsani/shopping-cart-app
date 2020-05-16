@@ -20,9 +20,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.css",
-    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/tailwind.css",
-    "postbuild": "purgecss --css build/static/css/*.css --content build/index.html build/static/js/*.js --output build/static/css"
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
+    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -43,7 +42,9 @@
     "@fullhuman/postcss-purgecss": "^2.2.0",
     "autoprefixer": "^9.7.6",
     "gh-pages": "^2.2.0",
+    "glob-all": "^3.2.1",
     "postcss-cli": "^7.1.1",
+    "purgecss-webpack-plugin": "^2.2.0",
     "tailwindcss": "^1.4.6"
   }
 }

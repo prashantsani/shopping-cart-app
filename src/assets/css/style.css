@@ -3,6 +3,10 @@
 	margin: 0;
 	padding: 0;
 }
+* svg{
+	background: none;
+	outline: none;
+}
 :root{
 	--header-footer-bg: rgba(50, 83, 232);
 	--header-height: 65px;
