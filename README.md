@@ -1,3 +1,10 @@
+# Shopping Cart App
+
+### URL
+https://prashantsani.github.io/shopping-cart-app/
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -26,6 +33,8 @@ The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+(Also, it Auto-deploys to https://prashantsani.github.io/shopping-cart-app/)
 
 ### `yarn eject`
 
@@ -66,3 +75,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Tailwind CSS for Utility Classes 
+More Details: https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/

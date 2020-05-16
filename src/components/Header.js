@@ -1,11 +1,26 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { AiFillStar } from 'react-icons/ai';
+import { FaSearch } from 'react-icons/fa';
+import { FaShoppingCart } from 'react-icons/fa';
 
 
 export class Header extends Component {
   render() {
     return (
       <header>
-        This is header
+        <div class='wrap flex flex-row flex-no-wrap items-center'>
+          <Link to='/' className='inline-block'><AiFillStar color='rgb(243,195,0)' size='44' /></Link>
+          
+          <button className='inline-block ml-auto'> 
+            <FaSearch color="rgb(255,255,255)" size="28" className='inline-block'/>
+          </button>
+
+          <Link to='/cart' className='inline-block cart-link ml-4'>
+            <sup className='inline-block count'>2</sup>
+            <FaShoppingCart color='rgb(0,0,0)' size='32' className='inline-block'/>
+          </Link>
+        </div>
       </header>
     );
   }

@@ -1,12 +1,17 @@
 import React from 'react';
-
+import Header from './Header';
 
 class Cart extends React.Component {
     render() {
         return (
-            <div>
-                This is Cart Page
-            </div>
+            <>
+            <Header />
+            <main>
+                <div className='wrap'>
+                    This is Cart Page
+                </div>
+            </main>
+            </>
         )
     }
 }
