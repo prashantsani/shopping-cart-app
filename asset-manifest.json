@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/shopping-cart-app/static/css/main.6b057c29.chunk.css",
-    "main.js": "/shopping-cart-app/static/js/main.73ce17d3.chunk.js",
-    "main.js.map": "/shopping-cart-app/static/js/main.73ce17d3.chunk.js.map",
-    "runtime-main.js": "/shopping-cart-app/static/js/runtime-main.a418c483.js",
-    "runtime-main.js.map": "/shopping-cart-app/static/js/runtime-main.a418c483.js.map",
-    "static/js/2.bc7a908c.chunk.js": "/shopping-cart-app/static/js/2.bc7a908c.chunk.js",
-    "static/js/2.bc7a908c.chunk.js.map": "/shopping-cart-app/static/js/2.bc7a908c.chunk.js.map",
+    "main.css": "/shopping-cart-app/static/css/main.25db1333.chunk.css",
+    "main.js": "/shopping-cart-app/static/js/main.dca043dd.chunk.js",
+    "main.js.map": "/shopping-cart-app/static/js/main.dca043dd.chunk.js.map",
+    "runtime-main.js": "/shopping-cart-app/static/js/runtime-main.06637453.js",
+    "runtime-main.js.map": "/shopping-cart-app/static/js/runtime-main.06637453.js.map",
+    "static/js/2.cbcc1806.chunk.js": "/shopping-cart-app/static/js/2.cbcc1806.chunk.js",
+    "static/js/2.cbcc1806.chunk.js.map": "/shopping-cart-app/static/js/2.cbcc1806.chunk.js.map",
     "index.html": "/shopping-cart-app/index.html",
-    "precache-manifest.6512395b18ba9556899f751c8dedf234.js": "/shopping-cart-app/precache-manifest.6512395b18ba9556899f751c8dedf234.js",
+    "precache-manifest.f47508f75230b504bd0b3ae06bbc66d6.js": "/shopping-cart-app/precache-manifest.f47508f75230b504bd0b3ae06bbc66d6.js",
     "service-worker.js": "/shopping-cart-app/service-worker.js",
-    "static/css/main.6b057c29.chunk.css.map": "/shopping-cart-app/static/css/main.6b057c29.chunk.css.map",
-    "static/js/2.bc7a908c.chunk.js.LICENSE.txt": "/shopping-cart-app/static/js/2.bc7a908c.chunk.js.LICENSE.txt"
+    "static/css/main.25db1333.chunk.css.map": "/shopping-cart-app/static/css/main.25db1333.chunk.css.map",
+    "static/js/2.cbcc1806.chunk.js.LICENSE.txt": "/shopping-cart-app/static/js/2.cbcc1806.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a418c483.js",
-    "static/js/2.bc7a908c.chunk.js",
-    "static/css/main.6b057c29.chunk.css",
-    "static/js/main.73ce17d3.chunk.js"
+    "static/js/runtime-main.06637453.js",
+    "static/js/2.cbcc1806.chunk.js",
+    "static/css/main.25db1333.chunk.css",
+    "static/js/main.dca043dd.chunk.js"
   ]
 }
