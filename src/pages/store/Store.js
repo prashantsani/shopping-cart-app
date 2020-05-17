@@ -7,9 +7,10 @@ import { Inventory } from '../../components/inventory/Inventory';
 
 class Store extends React.Component {
     render() {
+        const cartLinkVisibility = true;
         return (
             <>
-            <Header /> 
+            <Header cartLink={cartLinkVisibility}/> 
             <main>
                 <div className='wrap'>
                     <h1 className='text-3xl'>Welcome to ReactJS Store</h1> <TiArrowUnsorted />

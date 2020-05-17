@@ -4,9 +4,10 @@ import Footer from './../../components/footer/Footer';
 
 class Cart extends React.Component {
     render() {
+        const cartLinkVisibility = false;
         return (
             <>
-            <Header />
+            <Header cartLink={cartLinkVisibility}/>
             <main>
                 <div className='wrap'>
                     This is Cart Page

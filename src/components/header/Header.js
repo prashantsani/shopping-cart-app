@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { AiFillStar } from 'react-icons/ai';
 import { FaSearch } from 'react-icons/fa';
-import { FaShoppingCart } from 'react-icons/fa';
 import './Header.scss';
+import CartLink from './../CartLink/CartLink';
 
 
 export class Header extends Component {
   render() {
+    let cartLink;
+    if (this.props.cartLink) {
+      cartLink = <CartLink />;
+    } 
     return (
       <header>
         <div className='wrap flex flex-row flex-no-wrap items-center'>
@@ -16,11 +20,7 @@ export class Header extends Component {
           <button className='inline-block ml-auto bg-transparent'> 
             <FaSearch color='rgb(255,255,255)' size='28' className='inline-block'/>
           </button>
-
-          <Link to='/cart' className='inline-block cart-link ml-4'>
-            <sup className='inline-block count'>2</sup>
-            <FaShoppingCart color='rgb(255,255,255)' size='32' className='inline-block'/>
-          </Link>
+          {cartLink}
         </div>
       </header>
     );

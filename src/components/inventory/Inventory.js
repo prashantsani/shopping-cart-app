@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Inventory.scss';
-import ShoppingItem from '../shopping-item/ShoppingItem';
+import ShoppingItem from '../ShoppingItem/ShoppingItem';
 
 export class Inventory extends Component {
   render() {

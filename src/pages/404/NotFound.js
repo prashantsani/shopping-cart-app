@@ -6,16 +6,17 @@ import Footer from './../../components/footer/Footer';
 
 export class NotFound extends Component {
   render() {
+    const cartLinkVisibility = true;
     return (
       <>
-      <Header />
-      <main>
-        <div className='wrap'>
-          <h2>Page Not Found</h2>
-          <Link to='/'>Return to Home Page</Link>
-        </div>
-      </main>
-      <Footer />
+        <Header cartLink={cartLinkVisibility}/>
+        <main>
+          <div className='wrap'>
+            <h2>Page Not Found</h2>
+            <Link to='/'>Return to Home Page</Link>
+          </div>
+        </main>
+        <Footer />
       </>
     )
   }
