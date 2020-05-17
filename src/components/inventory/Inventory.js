@@ -9,7 +9,7 @@ export class Inventory extends Component {
           <div className='filters'>
             <h3>Filters</h3>
           </div>
-          <ul className='shopping-list ml-2 pl-2 grid grid-cols-5 gap-5'>
+          <ul className='unstyled shopping-list ml-2 pl-2 grid grid-cols-5 gap-5'>
             <ShoppingItem />
             <ShoppingItem />
             <ShoppingItem />
