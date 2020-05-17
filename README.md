@@ -79,3 +79,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/tr
 
 ### Tailwind CSS for Utility Classes 
 More Details: https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/
+
+### Plurging CSS for removing unused classes
+More Details: https://tylerzey.com/create-react-app-purge-css/
