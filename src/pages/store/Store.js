@@ -15,7 +15,7 @@ export default class Store extends React.Component {
     }
     
     componentDidMount() {
-        axios.get(`/cart.json`)
+        axios.get(`https://prashantsani.github.io/shopping-cart-app/cart.json`)
         .then(res => {
             const storeInventory = res.data.items;
             this.setState({ storeInventory });

@@ -15,7 +15,7 @@ export class ShoppingItem extends Component {
             <span className="inline-block text-green font-bold shopping-item-discount">{this.props.inventory.price.discount}% off</span>
           </span>
         </p>
-        <button className='btn bg-orange border border-orange hover:text-orange hover:bg-transparent rounded-full m-auto font-bold py-2 block shopping-item__cta'>Add to Cart</button>
+        <button className='btn bg-orange border border-orange hover--text-orange hover--bg-transparent rounded-full m-auto font-bold py-2 block shopping-item__cta'>Add to Cart</button>
       </li>
     );
   }
