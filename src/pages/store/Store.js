@@ -12,7 +12,7 @@ class Store extends React.Component {
             <Header /> 
             <main>
                 <div className='wrap'>
-                    This is Store Page <TiArrowUnsorted />
+                    <h1 className='text-3xl'>Welcome to ReactJS Store</h1> <TiArrowUnsorted />
                 </div>  
                 <Inventory />                
             </main>

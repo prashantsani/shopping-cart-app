@@ -11,12 +11,12 @@ export class ShoppingItem extends Component {
           <h4 className='shopping-item-title font-weight-bold text-2xl mb-1'>Item</h4>
           <p className='mb-2'>
             <span className="inline-block shopping-item-mrp font-bold">₹319</span>
-            <span className="block">
+            <span className="block flex justify-between flex-wrap">
               <span className="inline-block font-bold selling-price line-through gray-100 text-sm">900</span>
               <span className="inline-block text-green font-bold shopping-item-discount">64% off</span>
             </span>
           </p>
-          <button className='btn btn-orange m-auto block shopping-item__cta'>Add to Cart</button>
+          <button className='btn bg-orange border border-orange hover:text-orange hover:bg-transparent rounded-full m-auto font-bold py-2 block shopping-item__cta'>Add to Cart</button>
         </div>
       </>
     );
