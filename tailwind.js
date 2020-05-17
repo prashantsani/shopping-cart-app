@@ -19,6 +19,11 @@ module.exports = {
       black: '#000',
       white: '#fff',
       red: '#df1221',
+      orange: '#F49E1C',
+      green: '#219B1A',
+      gray: {
+        100: "#7A7A7A"
+      }
     },
     spacing: {
       px: '1px',
@@ -76,6 +81,18 @@ module.exports = {
       default: '1',
     },
     fontFamily: ['Verdana'],
+    fontSize: {
+      xs: '0.75rem',
+      sm: '0.875rem',
+      base: '1rem',
+      lg: '1.125rem',
+      xl: '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+    },
     fontWeight: {
       light: '300',
       normal: '400',

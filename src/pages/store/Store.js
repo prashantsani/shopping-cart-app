@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './../../components/header/Header';
 import Footer from './../../components/footer/Footer';
 import { TiArrowUnsorted } from 'react-icons/ti';
+import { Inventory } from '../../components/inventory/Inventory';
 
 
 class Store extends React.Component {
@@ -12,7 +13,8 @@ class Store extends React.Component {
             <main>
                 <div className='wrap'>
                     This is Store Page <TiArrowUnsorted />
-                </div>
+                </div>  
+                <Inventory />                
             </main>
             <Footer />
             </>

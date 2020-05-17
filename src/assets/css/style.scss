@@ -7,8 +7,13 @@
 	background: none;
 	outline: none;
 }
+html{
+	color: #262626;
+	background-color: #EEF0F4;
+	font-family: Verdana;
+}
 :root{
-	--header-footer-bg: rgba(50, 83, 232);
+	--header-footer-bg: #334Fe4;
 	--header-height: 65px;
 }
 .react-icons {

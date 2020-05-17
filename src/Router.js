@@ -6,13 +6,13 @@ import NotFound from './pages/404/NotFound';
 
 const Router = () => (
   <BrowserRouter>
-    <Redirect from='/' to="/shopping-cart-app/" />
     <Switch>
       <Route exact path='/shopping-cart-app/' component={ Store } />
       <Route exact path='/store' component={ Store } />
       <Route exact path='/cart' component={ Cart } />
       <Route component={ NotFound } />
     </Switch>
+    <Redirect from='/' to="/shopping-cart-app/" />
   </BrowserRouter>
 )
 
