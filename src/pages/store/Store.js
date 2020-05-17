@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from './../../components/header/Header';
-import Footer from './../../components/footer/Footer';
+import Header from './../../components/Header/Header';
+import Footer from './../../components/Footer/Footer';
 import { TiArrowUnsorted } from 'react-icons/ti';
-import { Inventory } from '../../components/inventory/Inventory';
+import { Inventory } from '../../components/Inventory/Inventory';
 
 
 class Store extends React.Component {
