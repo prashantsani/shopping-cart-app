@@ -7,7 +7,6 @@ import './Range.scss';
 export class Range extends Component {
   constructor(props) {
     super(props);
-    console.log('SUPER>>>>>',this.props.price);
     this.state = {
       value: {min: this.props.price.min, max: this.props.price.max},
     };
@@ -15,7 +14,7 @@ export class Range extends Component {
 
   handleChange = (value) => {
     this.setState({ value });
-    console.log(value)
+    this.props.filterInventory(value.min, value.max)
   }
 
   componentDidUpdate = (prevProps,prevState) =>{

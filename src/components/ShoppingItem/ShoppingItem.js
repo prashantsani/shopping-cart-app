@@ -3,6 +3,11 @@ import './ShoppingItem.scss';
 
 
 export class ShoppingItem extends Component {
+
+  addToCart = () => {
+    this.props.addToCart()
+  }
+
   render() {
     return (
       <li className='shopping-item'>
