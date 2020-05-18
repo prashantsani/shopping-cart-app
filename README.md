@@ -76,6 +76,10 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
+---
+
+### React Icons 
+Used React Icons for Icons https://react-icons.github.io/react-icons/icons?name=ai
 
 ### Tailwind CSS for Utility Classes 
 More Details: https://www.smashingmagazine.com/2020/02/tailwindcss-react-project/
