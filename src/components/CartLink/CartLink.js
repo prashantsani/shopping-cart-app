@@ -8,7 +8,7 @@ export class CartLink extends Component {
   render() {
     return (
       <Link to='/cart' className='inline-block cart-link ml-4'>
-        <sup className='inline-block count'>2</sup>
+        <sup className='inline-block count'>{this.props.CartLink}</sup>
         <FaShoppingCart color='rgb(255,255,255)' size='32' className='inline-block'/>
       </Link>
     );

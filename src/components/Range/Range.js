@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import InputRange from 'react-input-range';
 import './Range.scss';
 
@@ -29,13 +28,11 @@ export class Range extends Component {
  
   render() {
     return (
-      <>
       <InputRange
         maxValue={this.props.price.max}
         minValue={0}
         value={this.state.value}
         onChange={value => this.handleChange( value ) } />
-      </>
     );
   }
 }

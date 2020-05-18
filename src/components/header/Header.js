@@ -10,7 +10,7 @@ export class Header extends Component {
   render() {
     let cartLink;
     if (this.props.cartLink) {
-      cartLink = <CartLink />;
+      cartLink = <CartLink cartNumber={this.props.cartNumber} />;
     } 
     return (
       <header>

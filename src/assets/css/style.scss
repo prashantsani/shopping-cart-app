@@ -29,7 +29,7 @@ html{
 }
 /* Main */
 main{
-	margin-top: 100px;
+	margin: 100px 0;
 	min-height: calc(100vh - (var(--header-height) + 74px) );
 }
 a, button{

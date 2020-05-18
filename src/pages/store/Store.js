@@ -2,8 +2,11 @@ import React from 'react';
 import axios from 'axios';
 import Header from './../../components/Header/Header';
 import Footer from './../../components/Footer/Footer';
-import { TiArrowUnsorted, TiScissors } from 'react-icons/ti';
 import { Inventory } from '../../components/Inventory/Inventory';
+import { SortWrap } from '../../components/SortWrap/SortWrap';
+import Range from './../../components/Range/Range';
+import { comparePrice, compareDiscount  } from './../../helpers';
+import { TiArrowUnsorted, TiScissors } from 'react-icons/ti';
 
 
 
@@ -19,6 +22,21 @@ export default class Store extends React.Component {
             },
             cartItems:[]
         }
+    }
+
+    sortDiscount = () => {
+        const storeInventory = this.state.storeInventory.sort(compareDiscount);
+        this.setState({storeInventory});
+    }
+
+    sortPriceAscending = () => {
+        const storeInventory = this.state.storeInventory.sort(comparePrice);
+        this.setState({storeInventory});
+    }
+    
+    sortPriceDescending = () => {
+        const storeInventory = this.state.storeInventory.sort(comparePrice).reverse();
+        this.setState({storeInventory});
     }
 
     addToCart = () => {
@@ -67,12 +85,24 @@ export default class Store extends React.Component {
         const cartLinkVisibility = true;
         return (
             <>
-                <Header cartLink={cartLinkVisibility}/> 
+                <Header cartLink={cartLinkVisibility} cart={this.state.cartItems.length} /> 
                 <main>
                     <div className='wrap'>
-                        <h1 className='text-3xl'>Welcome to ReactJS Store</h1> <TiArrowUnsorted />
-                    </div>  
-                    <Inventory addToCart={this.addToCart} filterInventory={this.filterInventory} price={this.state.price} storeInventory ={this.state.storeInventory}/>                
+                        <h1 className='text-3xl'>Welcome to ReactJS Store</h1> 
+                    </div>
+                    <div className='my-5 flex justify-between wrap'>
+                        {/* Left Column */}
+                        <div className='filters'>
+                            <h3 className="mb-4">Filters</h3>
+                            <Range filterInventory={this.filterInventory} price={this.state.price} />
+                        </div>
+
+                        {/* Right Column */}
+                        <div className='ml-5 pl-5'>
+                            <SortWrap sortDiscount={this.sortDiscount} sortPriceAscending={this.sortPriceAscending} sortPriceDescending={this.sortPriceDescending} />
+                            <Inventory addToCart={this.addToCart} storeInventory ={this.state.storeInventory}/>                
+                        </div>
+                    </div>
                 </main>
                 <Footer />
             </>
