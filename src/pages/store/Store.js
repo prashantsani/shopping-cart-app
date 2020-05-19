@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Header from './../../components/Header/Header';
 import Footer from './../../components/Footer/Footer';
-import { Inventory } from '../../components/Inventory/Inventory';
+import { ProductList } from '../../components/ProductList/ProductList';
 import { SortWrap } from '../../components/SortWrap/SortWrap';
 import Range from './../../components/Range/Range';
 import { comparePrice, compareDiscount  } from './../../helpers';
@@ -14,8 +14,8 @@ export default class Store extends React.Component {
     constructor(props){
         super(props);
         this.state = {
-            storeInventoryAll: [], 
-            storeInventory: [],
+            inventory: [], 
+            products: [],
             price: {
                 min: 0,
                 max: 1
@@ -25,18 +25,18 @@ export default class Store extends React.Component {
     }
 
     sortDiscount = () => {
-        const storeInventory = this.state.storeInventory.sort(compareDiscount);
-        this.setState({storeInventory});
+        const products = this.state.products.sort(compareDiscount);
+        this.setState({products});
     }
 
     sortPriceAscending = () => {
-        const storeInventory = this.state.storeInventory.sort(comparePrice);
-        this.setState({storeInventory});
+        const products = this.state.products.sort(comparePrice);
+        this.setState({products});
     }
     
     sortPriceDescending = () => {
-        const storeInventory = this.state.storeInventory.sort(comparePrice).reverse();
-        this.setState({storeInventory});
+        const products = this.state.products.sort(comparePrice).reverse();
+        this.setState({products});
     }
 
     addToCart = (id, quantity) => {
@@ -48,7 +48,7 @@ export default class Store extends React.Component {
     }
 
     filterInventory = (min=0, max) =>{
-        const storeInventory = this.state.storeInventoryAll.filter((item) => {
+        const products = this.state.inventory.filter((item) => {
             const price = item.price.actual;
 
             if (price>min && price <= max){
@@ -57,18 +57,18 @@ export default class Store extends React.Component {
                 return false
             }
         });
-        this.setState({storeInventory});
+        this.setState({products});
     }
     
     componentDidMount() {
         axios.get(`https://prashantsani.github.io/shopping-cart-app/cart.json`)
         .then(res => {
-            const storeInventory = res.data.items;
+            const products = res.data.items;
             let maxPrice = 0;
 
-            for (let i = 0; i<storeInventory.length; i++){
-                if(storeInventory[i].price.actual > maxPrice){
-                    maxPrice = storeInventory[i].price.actual;
+            for (let i = 0; i<products.length; i++){
+                if(products[i].price.actual > maxPrice){
+                    maxPrice = products[i].price.actual;
                 }
             }
 
@@ -77,8 +77,8 @@ export default class Store extends React.Component {
                         ...prevState.price,
                         max: maxPrice
                     },
-                    storeInventoryAll: storeInventory,
-                    storeInventory: storeInventory,
+                    inventory: products,
+                    products: products,
                 })
             );
         })
@@ -104,7 +104,7 @@ export default class Store extends React.Component {
                         {/* Right Column */}
                         <div className='ml-5 pl-5'>
                             <SortWrap sortDiscount={this.sortDiscount} sortPriceAscending={this.sortPriceAscending} sortPriceDescending={this.sortPriceDescending} />
-                            <Inventory addToCart={this.addToCart} storeInventory ={this.state.storeInventory}/>                
+                            <ProductList addToCart={this.addToCart} products ={this.state.products}/>                
                         </div>
                     </div>
                 </main>
