@@ -39,8 +39,12 @@ export default class Store extends React.Component {
         this.setState({storeInventory});
     }
 
-    addToCart = () => {
-
+    addToCart = (id, quantity) => {
+        this.setState(
+            prevState => ({
+                cartItems : [...prevState.cartItems, {id: id, quantity: quantity } ]
+            })
+        )
     }
 
     filterInventory = (min=0, max) =>{
